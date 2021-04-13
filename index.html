@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="yes" name="apple-mobile-web-app-capable" />
+        <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>구현민 | 프론트엔드 개발자 스토리</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/slide.css" rel="stylesheet" />
+
+        <script data-ad-client="ca-pub-6390235790554017" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+    <body id="page-top" href = "javascript:void(0)" onclick = "clolse();" style="overflow-x:hidden">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">구현민</a>
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    메뉴
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">인생 스토리</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">공지사항</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">작품들</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#collection">Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-info text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/profile.png" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">구현민</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                    <div class="masthead-subheading font-weight-light mb-0 typing-txt" style="font-family: 맑은 고딕; font-weight: bold;"> 
+                        <ul>
+                          <li>프론트엔드 개발자 입니다!</li>
+                      </ul>
+                    </div> 
+                      <div class="typing">
+                         <ul>
+                           <li></li>
+                        </ul>
+                      </div> 
+            </div>
+        </header>
+
+        <!-- The Modal -->
+    <div id="myModal" class="modal1">
+ 
+        <!-- Modal content -->
+        <div class="modal2-content">
+                  <!-- 사이트 점검일 떄 
+                      <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">공지</span></b></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><br /></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">사이트 서버 점검으로</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><b><span style="color: rgb(255, 0, 0); font-size: 14pt;">10:00 - 18:00 까지</span></b></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">사이트 사용이 중지 됩니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;"><br /></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">이용에 불편을 드린 점 양해를 </span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">부탁드립니다.</span></p> -->
+                  <p style="text-align: center;"><span style="font-size: 14pt;"><b><span style="font-size: 24pt;">업데이트</span></b></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 10pt;">(2021-04-08)</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><br /></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">- <b><span style="color: rgb(167, 47, 47); font-size: 14pt;">작품's</span></b> 카테고리에 <b><span style="color: rgb(51, 31, 126); font-size: 14pt;">"페샵(Page Shop)"</span></b> 게시글이 추가되었습니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">- <b><span style="color: rgb(252, 151, 0); font-size: 14pt;">하고 싶은 말</span></b> 카테고리가 추가되었습니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt;">- <b><span style="color: rgb(0, 136, 45); font-size: 14pt;">하고 싶은 말</span></b> 카테고리에서 댓글을 작성할 수 있습니다.</span></p>
+                  <p><br /></p>
+              <div style="cursor:pointer;background-color:#DDDDDD;text-align: center;padding-bottom: 10px;padding-top: 10px;" onClick="close_pop();">
+                  <span class="pop_bt" style="font-size: 13pt;" >
+                       닫기
+                  </span>
+              </div>
+        </div>
+   
+      </div>
+          <!--End Modal-->
+
+          <script type="text/javascript">
+      
+            jQuery(document).ready(function() {
+                    $('#myModal').show();
+            });
+            //팝업 Close 기능
+            function close_pop(flag) {
+                 $('#myModal').hide();
+            };
+            
+          </script>
+
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Life Story</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/portfolio1.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/portfolio2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/portfolio3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/portfolio4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+           <img src="assets/img/qualification/frontend.png" style="width: 256px; height: 150px;"/>
+           <img src="assets/img/qualification/react.png" style="width: 100px; height: 100px; margin-top: 30px;"/>
+        </div>
+        </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-dark text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <p style="font-family: 맑은 고딕; font-size: 15px; font-weight: bold;">
+                        사이트 개설일 : 2021-03-23
+                        <br>
+                        최종 점검일 : 2021-04-08 (20시 51분)
+                        <br>
+                        <br>
+                        <div class="block">
+                            <ul id="ticker">
+                                <li>성실한,</li>
+                                <li>멋진,</li>
+                                <li>내 것처럼 다루는,</li>
+                                <li>열정적인,</li>
+                                <li>심플한,</li>
+                            </ul>
+                        </div>개발자가 될 수 있게 노력하겠습니다
+                    </p>
+                    <p style="font-family: 맑은 고딕; font-size: 7px;">가장 아래 SNS 부분에 이스터에그가 숨겨져있어요!</p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">작품's</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row text-center">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="clock">
+                            <h1>00:00:00</h1>
+                        </div>
+                        <script src="js/clock2.js"></script>
+
+                    <canvas id="gameCanvas" width=300 height=500></canvas>
+                    <script type="module" src="js/app.js"></script>
+                    <p style="font-family: 맑은 고딕;">
+                        <b>==벽돌 부수기==</b><br>
+                        (2021-03-23)<br><br>
+                        단축키 a - 시작<br> 방향키 왼쪽<br> 방향키 오른쪽
+                    </p>
+                    <figure class="swing">
+                        <a href="http://waterduck12.github.io"><img src="/assets/img/작품/작품1.png" width="100%"></a>
+                      </figure>
+                      <p style="font-family: 맑은 고딕;">
+                        <b>==페샵(Page Shop)==</b><br>
+                        (2021-04-07) - 계속 개발중<br><br>
+                        프로젝트 참가 - 구현민<br><br>
+                        리액트 라이브러리로 개발된 쇼핑물 예제 사이트 입니다.<br>
+                        [액자 클릭하면 사이트로 이동해져요]
+                    </p>  
+                    </div> 
+        </section>
+
+        <!-- Collection Section-->
+        <section class="page-section bg-warning text-white mb-0" id="collection">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Collection</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <center>
+                <div class="wrapper">
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModal5"><img src="/assets/img/collection/collection1.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModal6"><img src="/assets/img/collection/collection2.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModal7"><img src="/assets/img/collection/collection3.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModal8"><img src="/assets/img/collection/collection4.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModal9"><img src="/assets/img/collection/collection5.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModa20"><img src="/assets/img/collection/collection6.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModa21"><img src="/assets/img/collection/collection7.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModa22"><img src="/assets/img/collection/collection8.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModa23"><img src="/assets/img/collection/collection9.jpg" style="width:50px; height:65px;"/></div>
+                    <div class="box portfolio-item" data-toggle="modal" data-target="#portfolioModa24"><img src="/assets/img/collection/collection10.png" style="width:50px; height:65px;"/></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                    <div class="box" style="height:69px;"></div>
+                </div>
+                <br>
+                <p style="color:black;">* 클릭하면 크게 볼 수 있어요!</p>
+                <p style="color:black; font-size:10px;">[ 일러스트를 클릭하다보면 숨겨진 이미지도 볼 수 있습니다 ]</p>
+            </center>
+
+                <!-- <center><img src="assets/img/warning.png" style="width: 150px; height: 150px;"/></center>
+                <p style="text-align: center;"><span style="font-size: 14pt; color: rgb(0, 0, 0)"><b><span style="font-size: 24pt;">점검중!</span></b></span></p>
+                  <p style="text-align: center; line-height: 1.5;"><br /></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="font-size: 14pt; color: rgb(0, 0, 0)">콘텐츠를 추가했으나, 버그가 발생해 잠시 내리기로 결정했습니다.</span></p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-size: 14pt;">콘텐츠가 준비되기 전까지 기다려주시면 감사하겠습니다.</p>
+                  <p style="text-align: center; line-height: 1.5;"><span style="color: rgb(0, 0, 0); font-size: 14pt;">감사합니다.</p>
+                  <p><br /></p> -->
+            </div>
+        </section>
+
+        <section class="page-section bg-light text-white mb-0" id="collection">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">하고 싶은 말</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div id="disqus_thread"></div>
+                <script>
+                    /**
+                    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://hyeonmin.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+</section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">위치</h4>
+                        <p class="lead mb-0">
+                            경상북도 경산시
+                            <br />
+                            Email : 00hyeon_@naver.com
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">SNS</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/minui00/"><i class="fab fa-fw fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/waterduck12"><i class="fab fa-fw fa-github"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1 nav-link js-scroll-trigger" id="toggleTheme"  href="#portfolio" onclick="showLayer(); imgToggle();"><i class="fab fa-fw fa-???"></i></a>
+                    </div>
+                    <div id="light" class="white_content"> 
+                    <div>  
+                        <div style="text-align:center; vertical-align:text-top;"> 
+                        </div> 
+                    </div> 
+
+                    <center>
+                        <img src="assets/img/Mode/sun.png" style="width: 300px; height: 300px;" class="fade-out-box" id="sun">
+                        <img src="assets/img/Mode/Moon.png" style="width: 300px; height: 300px;" class="fade-out-box" id="moon"></center>
+                </div>
+
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">TMI</h4>
+                        <p class="lead mb-0" style="font-family: 맑은 고딕; font-size: 17px;">
+                            좋은 개발자가 될 수 있게 노력하겠습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright © Hyeonmin Koo</small></div>
+        </div>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        </div>
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">개발의 시작</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="/assets/img/portfolio/portfolio1.jpg" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">학창시절 부터 프로그래밍에 흥미가 생겨 C언어 등 많은 도전이 있었지만, 어린나이에 이해도 되지 않을 뿐더러 계속 넘어졌었는데 그 시도들이 지금의 저를 만든 것 같습니다</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        닫기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">꿈, 그리고 목표</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/portfolio2.jpg" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">처음엔 아무 꿈과 목표없이 프로그래밍 공부를 시작했습니다. 근데 공부를 하고 개발을 하다보니 목표가 하나 생겼는데요. 프론트엔드 개발자를 이루고 나서 최종적으로 풀스택 개발자를 이루는게 저의 꿈이자 목표입니다.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        닫기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">앞으로의 개발 방향</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/portfolio3.jpg" alt="" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">이 포트폴리오 홈페이지를 먼저 완성시키는 것이 목표입니다. 완성 후에 앞으로 홈페이지에 추가될 많은 콘텐츠들을 개발해나갈 예정입니다.</p>
+                                    <button class="btn btn-primary" data-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        닫기
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">경력</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/portfolio4.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">[前] 2015~2021 영상편집 AD<br>
+                                [前] 2018.06~2020.02 육군 보병 군복무 (병장 전역)<br>
+                                [前] 2020.02~2020.07 게임 유튜브 편집자<br>
+                                [前] 2020.12~2021.01 게임 유튜브 편집자<br>
+                                [現] 2021.01~ 취준생 개발자<br>
+                                [前] 2021.03 에어컨 엔지니어<br>
+                                [現] 2021.03~2021.04 대학 연구원 보조<br> </p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Colletion Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" id=img1 src="assets/img/collection/collection1.jpg" alt="" />
+                                <img class="img-fluid rounded mb-5" id=img2 src="assets/img/collection/collection1-1.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 요정소정님 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection2.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 넵넵넵님 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" id=img3 src="assets/img/collection/collection3.jpg" alt="" />
+                                <img class="img-fluid rounded mb-5" id=img4 src="assets/img/collection/collection3-1.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 듈고래님 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection4.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 조각상님 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection5.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">친구1 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModa20" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection6.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 내 캐릭터 그림1.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModa21" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection7.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">커플 그림.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModa22" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection8.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 퀸메리님 커미션.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModa23" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection9.jpg" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 내 캐릭터 그림2.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModa24" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Collection</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/collection/collection10.png" alt="" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-5">게임 메이플스토리 내 캐릭터 그림3.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    닫기
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="js/slide.js"></script>
+    </body>
+</html>
